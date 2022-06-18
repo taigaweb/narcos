@@ -1,0 +1,592 @@
+@charset "UTF-8";
+/* CSS Document */
+/*section-top*/
+.section-top {
+  margin-bottom: 80px;
+}
+.section-top__image {
+  position: relative;
+  height: calc(100vh - 84px);
+  width: 100%;
+  background-image: url("../image/main-visual.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.section-top__image-filter {
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.50);
+}
+.section-top__image-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: #FFF;
+  font-weight: 600;
+}
+.section-top__image-message-up {
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+  margin: 0 auto 100px;
+  align-items: center;
+}
+.section-top__image-message-up .left {
+  font-size: 20rem;
+  padding: 50px;
+  border-right: 3px solid;
+}
+.section-top__image-message-up .right {
+  font-size: 6.5rem;
+  text-align: left;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  padding-left: 30px;
+}
+.section-top__image-message p {
+  font-size: 3.0rem;
+  letter-spacing: 0.25em;
+}
+/* 1200pxまでの幅の場合に適応される */
+@media screen and (max-width: 1200px) {
+  .section-top__image-message-up .left {
+    font-size: 17rem;
+    padding: 50px;
+    border-right: 3px solid;
+  }
+  .section-top__image-message-up .right {
+    font-size: 5rem;
+    line-height: 1.7;
+    padding-left: 30px;
+  }
+  .section-top__image-message p {
+    font-size: 2.5rem;
+    letter-spacing: 0.25em;
+  }
+}
+/* 1024pxまでの幅の場合に適応される */
+@media screen and (max-width: 1024px) {
+  .section-top {
+    margin-bottom: 60px;
+  }
+  .section-top__image-message-up {
+    margin: 0 auto 80px;
+  }
+  .section-top__image-message-up .left {
+    font-size: 15rem;
+    padding: 40px;
+    border-right: 3px solid;
+  }
+  .section-top__image-message-up .right {
+    font-size: 3rem;
+    line-height: 2.5;
+    padding-left: 30px;
+  }
+  .section-top__image-message p {
+    font-size: 2.0rem;
+    letter-spacing: 0.25em;
+  }
+}
+/* 768pxまでの幅の場合に適応される */
+@media screen and (max-width: 768px) {
+  .section-top {
+    margin-bottom: 60px;
+  }
+  .section-top__image {
+    height: calc(100vh - 50px);
+  }
+  .section-top__image-message-up {
+    margin: 0 auto 60px;
+  }
+  .section-top__image-message-up .left {
+    font-size: 10rem;
+    letter-spacing: 0;
+    padding: 20px;
+    border-right: 2px solid;
+  }
+  .section-top__image-message-up .right {
+    font-size: 2rem;
+    line-height: 2.5;
+    padding-left: 20px;
+  }
+  .section-top__image-message p {
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+  }
+}
+/* 480pxまでの幅の場合に適応される */
+@media screen and (max-width: 480px) {
+  .section-top__image-message-up {
+    margin: 0 auto 50px;
+  }
+  .section-top__image-message-up .left {
+    font-size: 6rem;
+    padding: 15px;
+    border-right: 1px solid;
+  }
+  .section-top__image-message-up .right {
+    font-size: 1.8rem;
+    line-height: 2.0;
+    padding-left: 15px;
+  }
+  .section-top__image-message p {
+    font-size: 1.4rem;
+    letter-spacing: 0.05em;
+  }
+}
+/*section-about*/
+.section-about {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+.section-about h2 {
+  margin-bottom: 60px;
+}
+.section-about__wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+  align-items: center;
+}
+.section-about__visual {
+  width: 40%;
+  height: 100%;
+}
+.section-about__photo {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  object-fit: cover;
+}
+.section-about__sentence {
+  width: 60%;
+  text-align: left;
+  margin-left: 50px;
+}
+.section-about__sentence h3 {
+  font-size: 3.2rem;
+  margin-bottom: 15px;
+}
+.section-about__sentence span {
+  display: block;
+  font-size: 1.6rem;
+  color: #777777;
+  margin-bottom: 30px;
+}
+.section-about__sentence div {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  line-height: 2.0;
+}
+.section-about__sentence p {
+  font-size: 1.6rem;
+  line-height: 2.2;
+  max-width: 680px
+}
+/* 1024pxまでの幅の場合に適応される */
+@media screen and (max-width: 1024px) {
+  .section-about {
+    padding: 0 50px;
+    margin-bottom: 80px;
+  }
+  .section-about h2 {
+    margin-bottom: 40px;
+  }
+  .section-about__wrapper {
+    display: block;
+  }
+  .section-about__visual {
+    width: 100%;
+    height: 310px;
+    margin: 0 auto 50px;
+  }
+  .section-about__photo {
+    object-position: 0% 20%;
+  }
+  .section-about__sentence {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .section-about__sentence p {
+    max-width: 1024px;
+  }
+}
+/* 768pxまでの幅の場合に適応される */
+@media screen and (max-width: 768px) {
+  .section-about__sentence h3 {
+    font-size: 3.0rem;
+    margin-bottom: 12px;
+  }
+  .section-about__sentence span {
+    margin-bottom: 25px;
+  }
+  .section-about__sentence div {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+  }
+  .section-about__sentence p {
+    font-size: 1.6rem;
+  }
+}
+/* 480pxまでの幅の場合に適応される */
+@media screen and (max-width: 480px) {
+  .section-about {
+    padding: 0 20px;
+    margin-bottom: 60px;
+  }
+  .section-about h2 {
+    margin-bottom: 30px;
+  }
+  .section-about__sentence h3 {
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+  }
+  .section-about__sentence span {
+    font-size: 1.5;
+    margin-bottom: 20px;
+  }
+  .section-about__sentence div {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    line-height: 2.0;
+  }
+  .section-about__sentence p {
+    font-size: 1.6rem;
+    line-height: 2.0;
+  }
+}
+/*section-feature*/
+.section-feature {
+  background-color: #F5F5F7;
+  margin-bottom: 80px;
+  padding: 80px 0 50px;
+}
+.section-feature h2 {
+  margin-bottom: 60px;
+}
+/*section-one-and-only*/
+.section-one-and-only {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  max-width: 1024px;
+  margin: 0 auto 50px;
+}
+.section-one-and-only__visual {
+  width: 60%;
+}
+.section-one-and-only__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-one-and-only__description {
+  width: 40%;
+  text-align: left;
+  background-color: #FFFFFF;
+  padding: 5%;
+}
+.section-one-and-only__description h3 {
+  font-size: 3.2rem;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+.section-one-and-only__description p {
+  font-size: 1.6rem;
+  line-height: 2.0;
+}
+/*section-sale-buy-rent*/
+.section-sale-buy-rent {
+  display: flex;
+  justify-content: center;
+  max-width: 1024px;
+  margin: 0 auto 50px;
+}
+.section-sale-buy-rent__visual {
+  width: 60%;
+}
+.section-sale-buy-rent__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-sale-buy-rent__description {
+  width: 40%;
+  text-align: left;
+  background-color: #FFFFFF;
+  padding: 5%;
+}
+.section-sale-buy-rent__description h3 {
+  font-size: 3.2rem;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+.section-sale-buy-rent__description p {
+  font-size: 1.6rem;
+  line-height: 2.0;
+}
+/*section-furniture*/
+.section-furniture {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  max-width: 1024px;
+  margin: 0 auto 50px;
+}
+.section-furniture__visual {
+  width: 60%;
+}
+.section-furniture__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-furniture__description {
+  width: 40%;
+  text-align: left;
+  background-color: #FFFFFF;
+  padding: 5%;
+}
+.section-furniture__description h3 {
+  font-size: 3.2rem;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+.section-furniture__description p {
+  font-size: 1.6rem;
+  line-height: 2.0;
+}
+/* 768pxまでの幅の場合に適応される */
+@media screen and (max-width: 768px) {
+  .section-feature {
+    margin-bottom: 50px;
+    padding: 50px 50px 20px;
+  }
+  .section-feature h2 {
+    margin-bottom: 40px;
+  }
+  .section-one-and-only, .section-sale-buy-rent, .section-furniture {
+    display: block;
+    flex-direction: row;
+    margin: 0 auto 60px;
+  }
+  .section-one-and-only__visual, .section-sale-buy-rent__visual, .section-furniture__visual {
+    width: 100%;
+  }
+  .section-one-and-only__description, .section-sale-buy-rent__description, .section-furniture__description {
+    width: 100%;
+    padding: 5%;
+  }
+  .section-one-and-only__description h3, .section-sale-buy-rent__description h3, .section-furniture__description h3 {
+    font-size: 3.0rem;
+    margin-bottom: 20px;
+  }
+  .section-one-and-only__description p, .section-sale-buy-rent__description p, .section-furniture__description p {
+    font-size: 1.6rem;
+    line-height: 2.0;
+  }
+}
+/* 480pxまでの幅の場合に適応される */
+@media screen and (max-width: 480px) {
+  .section-feature {
+    margin-bottom: 60px;
+    padding: 60px 20px 10px;
+  }
+  .section-one-and-only__description h3, .section-sale-buy-rent__description h3, .section-furniture__description h3 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  .section-one-and-only__description p, .section-sale-buy-rent__description p, .section-furniture__description p {
+    font-size: 1.6rem;
+    line-height: 2.0;
+  }
+}
+/*section-service*/
+.section-service {
+  margin-bottom: 50px;
+}
+.section-service h2 {
+  margin-bottom: 60px;
+}
+.section-service ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.section-service ul li {
+  max-width: 350px;
+  margin: 0 50px 50px;
+}
+.section-service ul li img {
+  width: 100%;
+  height: 218px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin-bottom: 30px;
+}
+.section-service ul li h3 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+.section-service ul li span {
+  display: block;
+  font-size: 1.7rem;
+  font: #3B4043;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.section-service ul li p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+/* 768pxまでの幅の場合に適応される */
+@media screen and (max-width: 768px) {
+  .section-service {
+    margin-bottom: 30px;
+  }
+  .section-service h2 {
+    margin-bottom: 40px;
+  }
+  .section-service ul li {
+    max-width: 370px;
+    margin: 0 20px 50px;
+  }
+}
+/*section-company*/
+.section-company {
+  background-color: #F5F5F7;
+  padding: 80px 0 120px;
+}
+.section-company h2 {
+  margin-bottom: 50px;
+}
+.section-company__wrapper {
+  display: flex;
+  justify-content: center;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.section-company__info {
+  background-color: #FFF;
+  width: 50%;
+  padding: 40px;
+}
+.section-company__wrapper table th {
+  text-align: right;
+  font-size: 2.0rem;
+  padding-right: 30px;
+  height: 40px;
+}
+.section-company__wrapper table td {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 2.0;
+}
+.section-company__wrapper .google-map {
+  position: relative;
+  width: 50%;
+}
+.google-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.section-company .btn {
+  /*基本の部分*/
+  font-size: 2.0rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  margin-top: 60px;
+  padding: 20px 100px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #000;
+  /*基本の部分*/
+  border: 2px solid #000;
+  background: #fff;
+}
+.btn-border:hover {
+  color: #fff;
+  background: #000;
+  opacity: 1;
+}
+/* 1024pxまでの幅の場合に適応される */
+@media screen and (max-width: 1024px) {
+  .section-company__wrapper {
+    display: block;
+  }
+  .section-company__info {
+    width: 100%;
+    padding: 20px;
+  }
+  .section-company__wrapper table {
+    display: block;
+    margin: 0 auto;
+    max-width: 425px;
+  }
+  .section-company__wrapper .google-map {
+    width: 100%;
+    height: 40vw;
+  }
+}
+/* 768pxまでの幅の場合に適応される */
+@media screen and (max-width: 768px) {
+  .section-company {
+    padding: 60px 0 100px;
+  }
+  .section-company h2 {
+    margin-bottom: 40px;
+  }
+  .section-company__wrapper table th {
+    text-align: right;
+    font-size: 1.7rem;
+    height: 30px;
+  }
+  .section-company .btn {
+    /*基本の部分*/
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 40px;
+    padding: 15px 80px;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    /*基本の部分*/
+    border: 2px solid #000;
+  }
+}
+/* 480pxまでの幅の場合に適応される */
+@media screen and (max-width: 480px) {
+  .section-company__wrapper table th {
+    text-align: right;
+    font-size: 1.4rem;
+    padding-right: 20px;
+  }
+  .section-company__wrapper table td {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 2.0;
+  }
+}
